@@ -1,0 +1,6 @@
+framework module Pods_DemoRequestApiTests {
+  umbrella header "Pods-DemoRequestApiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
