@@ -34,13 +34,13 @@ extension ViewController: UITableViewDataSource {
         return listPoke.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PokeTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellPoke", for: indexPath) as? PokeTableViewCell else {
             return  UITableViewCell()
         }
-        let dataPoke = listPoke[indexPath.row].version
-        let dataImage = imageUrl[indexPath.row]
+        let dataPoke   = listPoke[indexPath.row].version
+        let dataImage  = imageUrl[indexPath.row]
         cell.name.text = dataPoke.name
-        cell.url.text = dataPoke.url
+        cell.url.text  = dataPoke.url
         cell.logo?.sd_setImage(with: URL(string: dataImage), placeholderImage: #imageLiteral(resourceName: "12"), options: [.continueInBackground, .progressiveLoad])
         return cell
     }
