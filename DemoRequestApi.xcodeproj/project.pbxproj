@@ -156,9 +156,8 @@
 				0437DB6A22CA4FDC00BEC0A5 /* UrlApi */,
 				F61AE26822C9E09200FA5497 /* Model */,
 				F61AE26722C9E08C00FA5497 /* View */,
-				F61AE26622C9E08100FA5497 /* Controller */,
+				F6E111AA22CAE297005088B0 /* Controller */,
 				F61AE23822C9E02600FA5497 /* AppDelegate.swift */,
-				F61AE23A22C9E02600FA5497 /* ViewController.swift */,
 				F61AE23C22C9E02600FA5497 /* Main.storyboard */,
 				F61AE23F22C9E02600FA5497 /* Assets.xcassets */,
 				F61AE24122C9E02600FA5497 /* LaunchScreen.storyboard */,
@@ -185,13 +184,6 @@
 			path = DemoRequestApiUITests;
 			sourceTree = "<group>";
 		};
-		F61AE26622C9E08100FA5497 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		F61AE26722C9E08C00FA5497 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +199,14 @@
 				F61AE26922C9E0A300FA5497 /* Poke.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F6E111AA22CAE297005088B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F61AE23A22C9E02600FA5497 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

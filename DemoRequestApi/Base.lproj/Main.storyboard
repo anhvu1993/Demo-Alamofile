@@ -30,23 +30,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="VHo-59-1qb">
-                                                    <rect key="frame" x="20" y="47" width="35" height="35"/>
+                                                    <rect key="frame" x="20" y="39.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="VHo-59-1qb" secondAttribute="height" id="YcL-W5-cp4"/>
-                                                        <constraint firstAttribute="height" constant="35" id="wgL-B3-SuN"/>
+                                                        <constraint firstAttribute="height" constant="50" id="wgL-B3-SuN"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-aa-CfT">
-                                                    <rect key="frame" x="75" y="39" width="280" height="51"/>
+                                                    <rect key="frame" x="170" y="10" width="185" height="108.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chc-dC-Ma4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chc-dC-Ma4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="185" height="49.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoK-5U-6IP">
-                                                            <rect key="frame" x="0.0" y="30.5" width="280" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoK-5U-6IP">
+                                                            <rect key="frame" x="0.0" y="59.5" width="185" height="49"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -55,16 +55,18 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="MqP-aa-CfT" firstAttribute="centerY" secondItem="VHo-59-1qb" secondAttribute="centerY" id="Dze-bM-D0S"/>
-                                                <constraint firstAttribute="trailing" secondItem="MqP-aa-CfT" secondAttribute="trailing" constant="20" id="MnB-C7-Wk8"/>
-                                                <constraint firstItem="MqP-aa-CfT" firstAttribute="leading" secondItem="VHo-59-1qb" secondAttribute="trailing" constant="20" id="XQk-sd-Bj9"/>
+                                                <constraint firstAttribute="trailing" secondItem="MqP-aa-CfT" secondAttribute="trailing" constant="20" id="Con-mR-Gab"/>
+                                                <constraint firstItem="MqP-aa-CfT" firstAttribute="leading" secondItem="VHo-59-1qb" secondAttribute="trailing" constant="100" id="DLI-FD-fV4"/>
+                                                <constraint firstItem="MqP-aa-CfT" firstAttribute="top" secondItem="7cp-yK-kLu" secondAttribute="top" constant="10" id="Sd3-tN-pQS"/>
                                                 <constraint firstItem="VHo-59-1qb" firstAttribute="leading" secondItem="7cp-yK-kLu" secondAttribute="leading" constant="20" id="dxb-XG-o1k"/>
+                                                <constraint firstAttribute="bottom" secondItem="MqP-aa-CfT" secondAttribute="bottom" constant="10" id="gAV-Ut-R9b"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
                                             <constraint firstItem="VHo-59-1qb" firstAttribute="centerY" secondItem="3oR-Jj-7Sc" secondAttribute="centerY" id="2dV-aS-U9w"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="logo" destination="VHo-59-1qb" id="SNp-Gx-zVt"/>
                                             <outlet property="name" destination="Chc-dC-Ma4" id="zK0-YA-W0w"/>
                                             <outlet property="url" destination="AoK-5U-6IP" id="qpi-w4-ZSn"/>
                                         </connections>

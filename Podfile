@@ -6,7 +6,8 @@ target 'DemoRequestApi' do
   use_frameworks!
 
   # Pods for DemoRequestApi
-pod 'Alamofire'
+  	pod 'SDWebImage'
+	pod 'Alamofire'
 
   target 'DemoRequestApiTests' do
     inherit! :search_paths

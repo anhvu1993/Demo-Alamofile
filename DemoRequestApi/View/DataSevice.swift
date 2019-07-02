@@ -52,7 +52,6 @@ class DataService {
                     var versiondetails = [Versiondetails]()
                     pokes?.map{versiondetails = $0.versiondetails}
                     comletHand(versiondetails)
-                    
                 }
             } catch {
                 print(error.localizedDescription)
